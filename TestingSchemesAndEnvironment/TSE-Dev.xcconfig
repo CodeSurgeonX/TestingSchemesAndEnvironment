@@ -1,0 +1,10 @@
+//
+//  TSE-Dev.xcconfig
+//  TestingSchemesAndEnvironment
+//
+//  Created by Shashwat Kashyap on 25/02/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+BASE_URL = https:www.rapid.api.randomapi.com/dev
