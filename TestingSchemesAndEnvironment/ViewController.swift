@@ -12,6 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let value = Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? String {
+            print(value)
+        }
+        
+        printer()
+    }
+    
+    func printer() {
+#if DEV
+        print("Running Dev")
+#elseif PROD
+        print("Running Prod")
+#elseif QA
+        print("Running QA")
+#endif
     }
     
     override func viewDidAppear(_ animated: Bool) {
